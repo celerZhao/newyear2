@@ -1,0 +1,162 @@
+/**
+ *@Name:    global-mobile.css
+ *@Object:  mobile
+ *@Author:  XiaoYu/Guo CJ
+ *@E-mail:  592429285@qq.com
+ *@Time:    2017.01.12
+*/
+
+@charset "UTF-8";
+
+html, body, .container {
+    height: 100%;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    width: 15rem;
+    z-index: 250;
+}
+
+.btn-audio {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 200;
+    width: 30px;
+    height: 30px;
+}
+
+.off {
+    background-image: url(../img/normalmusic.svg);
+    background-size: contain;
+}
+
+.iconControl {
+    position: absolute;
+    left: 50%;
+    margin-left: -1rem;
+    bottom: 1rem;
+    z-index: 350;
+    -webkit-animation: iconArrow .8s infinite linear;
+    animation: iconArrow .8s infinite linear;
+
+}
+
+@-webkit-keyframes iconArrow {
+    0% {
+        -webkit-transform: translateY(0px);
+
+    }
+
+    100% {
+        -webkit-transform: translateY(10px);
+    }
+}
+
+@keyframes iconArrow {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.rotate {
+    -webkit-animation: rotating 1.2s linear infinite;
+    -moz-animation: rotating 1.2s linear infinite;
+    -o-animation: rotating 1.2s linear infinite;
+    animation: rotating 1.2s linear infinite
+}
+
+@-webkit-keyframes rotating {
+    from {
+        -webkit-transform: rotate(0)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes rotating {
+    from {
+        -moz-transform: rotate(0)
+    }
+
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+.container-inner {
+    position: relative;
+    height: 200%;
+}
+
+.video {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 26rem;
+    padding: .5rem;
+    background-color: #000;
+    z-index: 9999;
+}
+
+.page {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.page {
+    background: url("../img/bg01.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.page-one-tree {
+    position: absolute;
+    left: -3rem;
+    top: -2.5rem;
+    z-index: 100;
+}
+
+.page-one-text {
+    position: absolute;
+    width: 72%;
+    left: 15%;
+    top: 12rem;
+}
+
+.page-one-bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+}
+
+i.iconfont {
+    color: #fff;
+}
+
+
+
+

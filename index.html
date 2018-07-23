@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no,email=no" />
+    <meta name="ML-Config" content="fullscreen=yes,preventMove=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>光汇云油-恭祝大家：鸡年大吉！</title>
+    <link rel="stylesheet" href="css/global-mobile.css" />
+    <link rel="stylesheet" href="css/layout-mobile.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+    var cssEl = document.createElement('style');
+    document.documentElement.firstElementChild.appendChild(cssEl);
+    function setPxPerRem() {
+        var dpr = 1;
+        var pxPerRem = document.documentElement.clientWidth * dpr / 32;
+        if (pxPerRem < 10) pxPerRem = 10;
+        if (pxPerRem > 20) pxPerRem = 20;
+        cssEl.innerHTML = 'html{font-size:' + pxPerRem + 'px!important;}';
+    }
+    setPxPerRem();
+    </script>
+</head>
+<body>
+    <div class="container up overhide">
+        <div class="logo"><img src="img/logo1.png"></div>
+        
+        <div class="container-inner">
+            <!-- page one-->
+            <div class="page active">
+
+                <div class="page-one-tree"><img src="img/img01.gif"></div>
+
+                <div class="page-one-text text-center"><img src="img/img10.png"></div>
+
+                <div class="video">
+                    <video width="100%" height="100%" poster="media/cars.png">
+                        <source src="media/cars.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="page-one-bottom"><img src="img/img02.png" /></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/lib/jquery-1.11.3.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <script>
+    var App = {
+        init: function() {
+            /*video*/
+            $('video').mediaelementplayer({
+                alwaysShowControls: false,
+                videoVolume: 'horizontal',
+                features: ['playpause','progress','volume','fullscreen']
+            });
+        }
+    };
+    $(function() {
+        App.init();
+    });
+    </script>
+</body>
+</html>
